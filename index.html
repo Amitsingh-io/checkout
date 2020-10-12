@@ -22,26 +22,31 @@
         border-radius: 5px;
         margin-bottom: 20px;
       }
-      .acc
-      {
-        
+      
+     
+     /* @media screen and(min-width: 991px) {
+        .content
+        {
+          display: flex !important;
+          float: left;
+        }
       }
-      .cdet
-      {
-        height: 280px;
-        width:20%;
-       
-        margin-left: 2%;
-       
-      }
+      @media screen and (max-width: 991px){
+        .accordion
+        {
+          width:90% !important;
+          
+        }
+      }*/
     </style>
 </head>
 <body>
   <br>
-  <div style="display: flex; ">
   
+  <div class="container-flex">
+  <div class="row" style="margin-left: 2%;">
   
-    <div id="accordion" style="width: 70%; margin-left:50px;">
+    <div id="accordion"  class="col-xl-8 col-lg-8 col-md-11 col-sm-11 col-11">
         <div class="card" id="active" >
           <div class="card-header" id="headingOne" style="background-color: rgb(236, 104, 15);">
             <h5 class="mb-0">
@@ -146,7 +151,7 @@
       </div>
       
    
-    <div class="cdet">
+    <div class="cdet col-xl-3 col-lg-3 col-md-11 col-sm-11 col-11">
       <p>
         <h5>PRICE DETAILS</h5></p>
       <hr  style="  border-top: 1px solid red;">
@@ -167,7 +172,7 @@
                 Your Total Saving on this order  <i class="fa fa-inr" aria-hidden="true"></i> 100
               </p>
       </div>
-      
+  </div>
     </div>
     
       <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
