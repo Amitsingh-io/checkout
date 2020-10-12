@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <!--icon library-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+      <!--/Bootstrap css-->
+      <!-- own css file link-->
+      
+      
+      <link rel="stylesheet" type="text/css" href="css/bookdetailscs.css" >
+      <!--/own css-->
+
+    <title>Checkout</title>
+    <style>
+      .txt
+      {
+        width: 100%;
+        height:40px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .acc
+      {
+        
+      }
+      .cdet
+      {
+        height: 280px;
+        width:20%;
+       
+        margin-left: 2%;
+       
+      }
+    </style>
+</head>
+<body>
+  <br>
+  <div style="display: flex; ">
+  
+  
+    <div id="accordion" style="width: 70%; margin-left:50px;">
+        <div class="card" id="active" >
+          <div class="card-header" id="headingOne" style="background-color: rgb(236, 104, 15);">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration: none; color :white; "><i class="fa fa-plus"></i>
+              LOGIN INFORMATION
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+             <a style="display: block; width: 100px; height: 30px; background-color: orangered; text-align: center; color:white; " data-target=""> Login</a>
+             <span id="username">
+               
+             </span>
+            </div>
+          </div>
+        </div>
+        <!--DELIVERY ADDRESS-->
+        <div class="card">
+          <div class="card-header" id="headingTwo" style="background-color: rgb(236, 104, 15);">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-decoration: none; color:white"><i class="fa fa-plus"></i>
+                 DELIVERY ADDRESS
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+             
+              <div class="container " style="background-color: rgba(224, 220, 220, 0.822);">
+                <br>
+                <div class="row">
+                  <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-12">
+                    <input type="text" class="txt"  placeholder="Name">
+                  </div>
+                  <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-12">
+                    <input type="text" class="txt" placeholder="10-Digit MObile Number">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-12">
+                    <input type="text" class="txt"  placeholder="Pincode">
+                  </div>
+                  <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-12">
+                    <input type="text" class="txt" placeholder="Locality">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
+                    <textarea class="txt" style="height: 80px;" placeholder="Address (Area) "></textarea>
+
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-12">
+                    <input type="text" class="txt"  placeholder="City/District">
+                  </div>
+                  <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-12">
+                    <input type="text" class="txt" placeholder="State">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-12">
+                    <input type="text" class="txt"  placeholder="Landmark">
+                  </div>
+                  <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-12">
+                    <input type="text" class="txt" placeholder="Alterante Phone Number">
+                  </div>
+                </div><br>
+                <div class="row">
+                  <div>
+                    <a href="#" style="text-decoration: none; width:250px; background-color: orangered; color:white; height:40px; display: block;text-align: center;">
+                      <span >Save and Deliver here</span>
+                    </a>
+                  </div>
+                  <br>
+                  &nbsp;
+                </div>
+            </div><!-- end of container-->
+            
+            </div>
+          </div>
+        </div>
+        
+        <!--PAYMENT OPTION-->
+        <div class="card">
+          <div class="card-header" id="headingThree" style="background-color: rgb(236, 104, 15);">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"  style="text-decoration: none; color: white;">
+                <i class="fa fa-plus"></i> PAYMENT OPTION
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+             ....
+            </div>
+          </div>
+        </div>
+      </div>
+      
+   
+    <div class="cdet">
+      <p>
+        <h5>PRICE DETAILS</h5></p>
+      <hr  style="  border-top: 1px solid red;">
+      <p>
+        Price(1 items) <span class=" mr-4 "style="float: right;"><i class="fa fa-inr" aria-hidden="true"></i> 1000</span>
+       </p>
+            <p>
+              Delivery Charges <span class=" mr-4"style="float: right;" ><i class="fa fa-inr " aria-hidden="true"></i> 40</span>
+            </p>
+            <hr style="  border-top: 1px dashed red;">
+            <p>
+              <strong> <h5>Total Payable <span class=" mr-4"style="float: right;"> <i class="fa fa-inr" aria-hidden="true"></i> 1040</span></h5>
+                </strong>
+            </p>
+            <hr  style="  border-top: 1px solid red;">
+            <br>
+              <p style="color:green">
+                Your Total Saving on this order  <i class="fa fa-inr" aria-hidden="true"></i> 100
+              </p>
+      </div>
+      
+    </div>
+    
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+     
+     <script>
+         /*enable manually */
+         $(document).ready(function(){
+        // Add minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+        	$(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+        
+        // Toggle plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
+         
+          </script>
+</body>
+</html>
